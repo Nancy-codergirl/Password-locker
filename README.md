@@ -6,7 +6,7 @@ This project is a python application that manages login and signup credentials o
 
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/Owiti-Charles/Password-Locker/master/images/ip1.png" width="900px" height="440px">
+<img src="" width="900px" height="440px">
 
 ## User Stories
 The user would like to.... :
@@ -28,7 +28,7 @@ The user would like to.... :
 
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone ```https://github.com/Owiti-Charles/Password-Locker.git```
+* git clone ```https://github.com/Nancy-codergirl/Password-locker.git```
 
 * cd Password-Locker
 
