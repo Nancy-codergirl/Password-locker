@@ -33,3 +33,22 @@ class UserTestCreate(unittest.TestCase):
         self.assertEqual(self.user.username,"Nancy")
         self.assertEqual(self.user.password,"12345")
         self.assertEqual(self.user.email,"n@mail.com")
+
+  def test_save_user(self):
+        '''
+        A test to check if the the save method saves the values
+        '''
+        self.user.save_user()
+        self.assertEqual(len(User.user_list),1)
+
+    def test_delete_user(self):
+        '''
+        A test to check if the delete method works 
+        '''
+        self.user.save_user()
+        self.new_user = User("Nancy","4312", "nancy@mail.com")
+        self.new_user_2 = User("muriithin","4262", "muriithin@mail.com")
+        self.new_user_2.save_user()
+        self.new_user.save_user()
+        self.new_user.delete_user()
+        self.assertEqual(len(User.user_list),2)
