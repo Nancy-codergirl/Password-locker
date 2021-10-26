@@ -6,7 +6,7 @@ This project is a python application that manages login and signup credentials o
 
 ## Screenshot
 
-<img src="" width="900px" height="440px">
+<img src="" width="500px" height="440px">
 
 ## User Stories
 The user would like to.... :
