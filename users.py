@@ -41,4 +41,6 @@ class User:
         '''
         for  user in cls.user_list:
             if user.username==username:
-                return user
+                return User
+
+                
