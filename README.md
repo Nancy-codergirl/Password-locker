@@ -4,10 +4,6 @@
 
 This project is a python application that manages login and signup credentials of a person for various accounts i.e. username and passwords for each account. It also stores the passwords and generates a unique password for a user if they do not want to generate new passwords by themselves.
 
-## Screenshot
-
-<img src="" width="500px" height="440px">
-
 ## User Stories
 The user would like to.... :
 * To create an account for the application or log into the application.
@@ -67,4 +63,4 @@ If you have any question or contributions, please email me at [nancy@gmail.com]
 
 ## License
 * *MIT License:*
-* Copyright (c) 2019 **Nancy Muriithi**
+* Copyright (c) 2021 **Nancy Muriithi**
