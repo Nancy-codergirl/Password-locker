@@ -32,3 +32,43 @@ class Credential:
         delete_credential method deletes a saved credential from the credential_list
         '''
         Credential.credential_list.remove(self)
+         @classmethod
+    def find_credential_by_account_name(cls,account_name):
+        '''
+        Method that takes in a account_name and returns a credential that matches that account_name.
+        Args:
+        account_name:account_name to search for
+        Returns:
+        credential  that matches the account_name.
+        '''
+        for credential in cls.credential_list:
+            if credential.account_name == account_name:
+                return credential
+
+
+    @classmethod
+    def credential_exist(cls,account_name):
+        '''
+        '''
+        for credential in cls.credential_list:
+            if credential.account_name == account_name:
+                return True
+
+        return False
+
+    @classmethod
+    def display_credentials(cls):
+        '''
+        list = cls.credential_list
+        for l in list:
+            print(l.__dict__)
+
+    @classmethod
+    def copy_username(cls ,account_name):
+        credentials_found = Credential.find_credential_by_account_name(account_name)
+        pyperclip.copy(credentials_found.username)
+
+    @classmethod
+    def copy_password(cls ,account_name):
+        credentials_found = Credential.find_credential_by_account_name(account_name)
+        pyperclip.copy(credentials_found.password)
